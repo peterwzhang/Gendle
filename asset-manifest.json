@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gendle/static/css/main.ed06da9d.css",
+    "main.js": "/gendle/static/js/main.43f9d2be.js",
+    "index.html": "/gendle/index.html",
+    "main.ed06da9d.css.map": "/gendle/static/css/main.ed06da9d.css.map",
+    "main.43f9d2be.js.map": "/gendle/static/js/main.43f9d2be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed06da9d.css",
+    "static/js/main.43f9d2be.js"
+  ]
+}
