@@ -1,0 +1,7 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1.3rem;
+    background-image: url(https://wallpapercave.com/wp/wp10519849.jpg);
+}
