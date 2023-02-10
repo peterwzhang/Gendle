@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Gendle/static/css/main.ed06da9d.css",
-    "main.js": "/Gendle/static/js/main.43f9d2be.js",
+    "main.js": "/Gendle/static/js/main.e0deae56.js",
     "index.html": "/Gendle/index.html",
     "main.ed06da9d.css.map": "/Gendle/static/css/main.ed06da9d.css.map",
-    "main.43f9d2be.js.map": "/Gendle/static/js/main.43f9d2be.js.map"
+    "main.e0deae56.js.map": "/Gendle/static/js/main.e0deae56.js.map"
   },
   "entrypoints": [
     "static/css/main.ed06da9d.css",
-    "static/js/main.43f9d2be.js"
+    "static/js/main.e0deae56.js"
   ]
 }
