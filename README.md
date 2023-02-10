@@ -2,6 +2,8 @@
 
 A guessing game similar to Wordle, but you try to guess Genshin Impact Characters based on their attributes instead of words. This project was inspired by [LoLdle](https://loldle.net/) and uses the [genshin.dev API](https://github.com/genshindev/api) to get character data.
 
+**You can try it [here](https://peterwzhang.github.io/Gendle/)!**
+
 ## Setup
 
 You can follow these steps to run this project locally:
