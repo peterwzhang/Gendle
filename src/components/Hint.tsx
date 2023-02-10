@@ -6,7 +6,6 @@ import GameDialog from "./GameDialog";
 export default function Hint(props: HintProps) {
     const [open, setOpen] = React.useState(false);
     const hintAvailable = props.numReveal - props.numGuesses <= 0;
-    console.log(hintAvailable);
 
     function handleClose() {
         setOpen(false);
