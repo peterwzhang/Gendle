@@ -1,6 +1,8 @@
+import { useTheme } from "@mui/material/styles";
 import ScaleText from "react-scale-text";
 
 export default function BoxText(props: BoxTextProps) {
+    const theme = useTheme();
     return (
         <ScaleText minFontSize={12} maxFontSize={20}>
             <p
@@ -9,7 +11,7 @@ export default function BoxText(props: BoxTextProps) {
                     padding: "10 5",
                     color: "white",
                     backgroundColor: props.bgColor,
-                    fontFamily: "Oswald, sans-serif",
+                    fontFamily: theme.typography.fontFamily,
                 }}
             >
                 {props.content}
