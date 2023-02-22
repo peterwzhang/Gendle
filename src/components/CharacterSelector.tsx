@@ -25,9 +25,6 @@ export default function CharacterSelector(props: CharacterSelectorProps) {
                     value={props.selectedChar}
                     sx={{
                         width: 300,
-                        "& .MuiOutlinedInput-notchedOutline": {
-                            borderColor: "#787C7E",
-                        },
                     }}
                     options={Array.from(props.characterList)}
                     onChange={changeHandler}
@@ -58,14 +55,7 @@ export default function CharacterSelector(props: CharacterSelectorProps) {
                         />
                     )}
                 />
-                <Button
-                    variant="outlined"
-                    sx={{
-                        color: "black",
-                        borderColor: "#6AAA64",
-                    }}
-                    onClick={props.btnHandler}
-                >
+                <Button variant="outlined" onClick={props.btnHandler}>
                     Enter
                 </Button>
             </Stack>

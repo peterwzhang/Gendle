@@ -9,8 +9,6 @@ export default function PropertyBox(props: PropertyBoxProps) {
                 width: 60,
                 height: 60,
                 backgroundColor: props.color,
-                display: "flex",
-                alignItems: "center",
             }}
         >
             <BoxText bgColor="none" content={props.content} />

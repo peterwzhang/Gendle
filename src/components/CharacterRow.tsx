@@ -1,42 +1,31 @@
-import { Stack } from "@mui/material";
+import { Stack, useTheme } from "@mui/material";
 import ImageBox from "./ImageBox";
 import PropertyBox from "./PropertyBox";
+
+const charProps: (keyof Character)[] = [
+    "vision",
+    "weapon",
+    "nation",
+    "affiliation",
+    "rarity",
+];
+
 export default function CharacterRow({ answer, charGuess }: CharacterRowProps) {
+    const theme = useTheme();
     return (
         <Stack direction="row" spacing={2}>
             <ImageBox content={charGuess.name} />
-            <PropertyBox
-                color={
-                    answer.vision === charGuess.vision ? "#6AAA64" : "#787C7E"
-                }
-                content={charGuess.vision}
-            />
-            <PropertyBox
-                color={
-                    answer.weapon === charGuess.weapon ? "#6AAA64" : "#787C7E"
-                }
-                content={charGuess.weapon}
-            />
-            <PropertyBox
-                color={
-                    answer.nation === charGuess.nation ? "#6AAA64" : "#787C7E"
-                }
-                content={charGuess.nation}
-            />
-            <PropertyBox
-                color={
-                    answer.affiliation === charGuess.affiliation
-                        ? "#6AAA64"
-                        : "#787C7E"
-                }
-                content={charGuess.affiliation}
-            />
-            <PropertyBox
-                color={
-                    answer.rarity === charGuess.rarity ? "#6AAA64" : "#787C7E"
-                }
-                content={charGuess.rarity.toString()}
-            />
+            {charProps.map((property, i) => (
+                <PropertyBox
+                    key={i}
+                    color={
+                        answer[property] === charGuess[property]
+                            ? theme.palette.success.main
+                            : theme.palette.info.main
+                    }
+                    content={charGuess[property].toString()}
+                />
+            ))}
         </Stack>
     );
 }

@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 export default function PropertyHeader(props: PropertyHeaderProps) {
     return (
@@ -7,13 +7,11 @@ export default function PropertyHeader(props: PropertyHeaderProps) {
                 width: 60,
                 height: 20,
                 display: "flex",
-                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                fontFamily: "Oswald, sans-serif",
             }}
         >
-            {props.category}
+            <Typography>{props.category}</Typography>
         </Box>
     );
 }
